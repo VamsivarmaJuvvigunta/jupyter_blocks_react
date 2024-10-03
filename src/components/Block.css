@@ -1,0 +1,111 @@
+.block {
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    background-color: #ffffff; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    position: relative; 
+    width: 100%; 
+    max-width: 450px; 
+    min-height: 250px; 
+    margin: 15px; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: stretch; 
+    cursor: move; 
+    transition: transform 0.2s ease, box-shadow 0.3s ease; 
+    overflow: hidden; 
+}
+
+.block.dragging {
+    opacity: 0.7; 
+    transform: scale(1.05); 
+}
+
+.block pre {
+    margin: 0;
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    overflow: auto; 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    background-color: #f0f0f0; 
+    font-family: 'Courier New', Courier, monospace; 
+    max-height: 160px; 
+    overflow-y: auto; 
+}
+
+.block textarea {
+    width: 100%;
+    height: 140px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    padding: 12px; 
+    box-sizing: border-box; 
+    outline: none; 
+    transition: border-color 0.3s ease; 
+}
+
+.block textarea:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.close {
+    position: absolute;
+    top: 10px; 
+    right: 15px; 
+    font-size: 18px; 
+    cursor: pointer;
+    color: #ff4d4d;
+    transition: color 0.3s ease; 
+}
+
+.close:hover {
+    color: #d9534f; 
+}
+
+.execute-button {
+    margin-top: 15px; 
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 12px 18px; 
+    cursor: pointer;
+    border-radius: 6px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    font-size: 16px; 
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); 
+}
+
+.execute-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.execute-button:active {
+    background-color: #004085; 
+    transform: translateY(0); 
+}
+
+.language-selector {
+    margin-top: 15px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    background-color: #f8f8f8; 
+    color: #333; 
+    cursor: pointer;
+    font-size: 15px; 
+    transition: background-color 0.3s ease; 
+}
+
+.language-selector:hover {
+    background-color: #e0e0e0; 
+}
+
+.language-selector:active {
+    background-color: #d1d1d1; 
+}

@@ -1,0 +1,30 @@
+.block-editor {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.block-editor textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.editor-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.editor-actions button {
+    margin-left: 10px;
+}

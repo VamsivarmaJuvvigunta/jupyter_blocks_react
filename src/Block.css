@@ -1,0 +1,27 @@
+/* Block.css */
+.block {
+    position: absolute;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: move;
+    box-sizing: border-box;
+  }
+  
+  .block pre, .block textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: monospace;
+  }
+  
+  .block .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
